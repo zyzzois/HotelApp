@@ -7,7 +7,13 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 appcompat = "1.6.1"
 material = "1.9.0"
+dagger = "2.48"
+retrofit = "2.9.0"
+coil = "2.4.0"
+ksp = "1.9.0-1.0.13"
+lifecycle-viewmodel-ktx = "2.6.2"
 constraintlayout = "2.1.4"
+kotlinx-metadata-jvm ="0.6.2"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -17,8 +23,14 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger"}
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger-other = { group = "org.jetbrains.kotlinx", name = "kotlinx-metadata-jvm", version.ref = "kotlinx-metadata-jvm" }
+viewmodelscope = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel-ktx"}
 
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
 
