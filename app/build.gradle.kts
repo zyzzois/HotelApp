@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -40,6 +41,7 @@ dependencies {
     implementation(project(":apartments"))
     implementation(project(":hotel"))
     implementation(project(":core-data"))
+    implementation(project(":core-ui"))
     implementation(project(":payment"))
     implementation(project(":reservation"))
 
@@ -51,7 +53,16 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Dagger 2
+    implementation(libs.dagger)
+    ksp(libs.dagger.compiler)
+    ksp(libs.dagger.other)
+
     // Slider
     implementation(libs.slider)
+
+    // Jetpack Navigation
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 
 }

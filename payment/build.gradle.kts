@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation(project(":core-data"))
+    implementation(project(":core-ui"))
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
@@ -44,7 +45,12 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Dagger 2
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
     ksp(libs.dagger.other)
+
+    // Jetpack Navigation
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 }

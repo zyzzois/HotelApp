@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/hotel_navigation">
+
+    <include app:graph="@navigation/apartments_navigation"/>
+    <include app:graph="@navigation/hotel_navigation"/>
+    <include app:graph="@navigation/reservation_navigation"/>
+    <include app:graph="@navigation/payment_navigation"/>
+
+</navigation>
