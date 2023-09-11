@@ -26,15 +26,19 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
+    implementation(project(":core-data"))
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
@@ -43,8 +47,20 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Dagger 2
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
     ksp(libs.dagger.other)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.converter.gson)
+
+    // ViewModelScope
+    implementation(libs.viewmodelscope)
+
+    // Slider
+    implementation(libs.slider)
 
 }
