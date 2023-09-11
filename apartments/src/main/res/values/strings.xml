@@ -1,2 +1,7 @@
 <resources>
+    <string name="apartment_title">Стандартный с видом на бассейн или сад</string>
+    <string name="all_inclusive">Все включено</string>
+    <string name="conditioner">Кондиционер</string>
+    <string name="apartment_detail_info">Подробнее о номере</string>
+    <string name="choose_apartment">Выбрать номер</string>
 </resources>

@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -49,6 +52,9 @@ dependencies {
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
     ksp(libs.dagger.other)
+
+    // Slider
+    implementation(libs.slider)
 
     // Jetpack Navigation
     implementation(libs.navigation.fragment)
