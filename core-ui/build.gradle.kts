@@ -2,11 +2,10 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.example.apartments"
+    namespace = "com.example.core_ui"
     compileSdk = 34
 
     defaultConfig {
@@ -26,17 +25,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
 }
 
 dependencies {
-    implementation(project(":core-data"))
-    implementation(project(":core-ui"))
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
@@ -44,13 +41,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
-
-    // Dagger 2
-    implementation(libs.dagger)
-    ksp(libs.dagger.compiler)
-    ksp(libs.dagger.other)
-
-    // Jetpack Navigation
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
 }

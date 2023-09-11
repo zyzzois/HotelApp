@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/apartments_navigation"
+    app:startDestination="@id/apartmentsFragment">
+
+    <fragment
+        android:id="@+id/apartmentsFragment"
+        android:name="com.example.apartments.presentation.ApartmentsFragment"
+        android:label="ApartmentsFragment">
+        <deepLink app:uri="hotelApp://apartments" />
+    </fragment>
+
+</navigation>
