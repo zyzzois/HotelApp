@@ -6,11 +6,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hotel.domain.entity.HotelInfo
 import com.example.hotel.domain.usecase.GetHotelInfoUseCase
+import com.example.hotel.presentation.model.PresentationModel
+import com.example.hotel.presentation.model.ViewMapper
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class HotelViewModel @Inject constructor(
-    private val getHotelInfoUseCase: GetHotelInfoUseCase
+   private val getHotelInfoUseCase: GetHotelInfoUseCase
+//    private val mapper: ViewMapper
 ): ViewModel() {
 
     private val _hotelInfo = MutableLiveData<HotelInfo>()
@@ -19,6 +22,7 @@ class HotelViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
+            //_hotelInfo.value = mapper.mapDomainEntityToPresentationEntity(getHotelInfoUseCase())
             _hotelInfo.value = getHotelInfoUseCase()
         }
     }

@@ -1,8 +1,5 @@
 <resources>
     <string name="hotel_name">Отель</string>
-    <string name="rating_text">5 Превосходно</string>
-    <string name="hotel_name_text">Steigenberger Makadi</string>
-    <string name="hotel_location_text">Madinat Makadi, Saga Road, Makadi Bay, Египет</string>
     <string name="hotel_detail_title">Об отеле</string>
     <string name="hotel_description_1">3-я линия</string>
     <string name="hotel_description_2">Платный Wi-Fi в фойе</string>
