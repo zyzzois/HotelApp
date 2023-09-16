@@ -11,13 +11,13 @@ dagger = "2.48"
 retrofit = "2.9.0"
 gson = "2.9.1"
 logging-interceptor = "4.10.0"
-coil = "2.4.0"
 ksp = "1.9.0-1.0.13"
 viewmodelscope = "2.6.2"
 constraintlayout = "2.1.4"
 kotlinx-metadata-jvm ="0.6.2"
 slider = "0.1.2"
 navigation = "2.7.2"
+org-jetbrains-kotlin-jvm = "1.9.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -44,3 +44,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }

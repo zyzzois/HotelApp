@@ -1,5 +1,8 @@
 <resources>
-    <string name="price_text">от 134 673Р</string>
+    <string name="price_text">от %1$d ₽</string>
     <string name="price_description_text">От 134 673Р</string>
     <string name="price_description">за тур с перелётом</string>
+    <string name="hotel_name_text">Steigenberger Makadi</string>
+    <string name="hotel_location_text">Madinat Makadi, Saga Road, Makadi Bay, Египет</string>
+    <string name="rating_text">%2$d %1$s</string>
 </resources>
