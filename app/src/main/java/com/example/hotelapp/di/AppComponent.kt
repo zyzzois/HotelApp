@@ -2,6 +2,9 @@ package com.example.hotelapp.di
 
 import android.app.Application
 import android.content.Context
+import com.example.apartments.di.ApartmentsDependencies
+import com.example.apartments.di.ApartmentsModule
+import com.example.apartments.domain.repository.ApartmentsRepository
 import com.example.code_data.di.CoreNetworkModule
 import com.example.hotel.di.HotelComponent
 import com.example.hotel.di.HotelDependencies
@@ -15,12 +18,14 @@ import dagger.Component
 @Component(
     modules = [
         HotelModule::class,
-        CoreNetworkModule::class
+        CoreNetworkModule::class,
+        ApartmentsModule::class
     ]
 )
-interface AppComponent: HotelDependencies {
+interface AppComponent: HotelDependencies, ApartmentsDependencies {
 
     override val hotelRepository: HotelRepository
+    override val apartmentsRepository: ApartmentsRepository
 
     @Component.Builder
     interface Builder {
