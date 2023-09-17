@@ -1,7 +1,7 @@
 package com.example.apartments.domain.repository
 
-import com.example.apartments.domain.entity.ApartmentInfo
+import com.example.apartments.domain.entity.ApartmentEntity
 
 interface ApartmentsRepository {
-    suspend fun getApartmentsListUseCase(): List<ApartmentInfo>
+    suspend fun getApartmentsListUseCase(): List<ApartmentEntity>
 }
