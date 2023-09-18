@@ -18,6 +18,8 @@ kotlinx-metadata-jvm ="0.6.2"
 slider = "0.1.2"
 navigation = "2.7.2"
 org-jetbrains-kotlin-jvm = "1.9.0"
+decoro = "1.1.1"
+lottie = "3.7.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -38,6 +40,9 @@ logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-intercep
 slider = { group = 'com.github.denzcoskun', name = 'ImageSlideshow', version.ref = 'slider'}
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigation"}
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation"}
+tinkoff-decoro = { group = "ru.tinkoff.decoro", name = "decoro", version.ref = "decoro"}
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie"}
+
 
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

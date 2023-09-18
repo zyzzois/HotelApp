@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/payment_navigation">
+    android:id="@+id/payment_navigation"
+    app:startDestination="@id/paymentFragment">
 
     <fragment
         android:id="@+id/paymentFragment"
-        android:name="com.example.payment.pesentation.PaymentFragment"
+        android:name="com.example.payment.presentation.PaymentFragment"
         android:label="PaymentFragment">
         <deepLink app:uri="hotelApp://payment" />
     </fragment>

@@ -53,6 +53,9 @@ dependencies {
     ksp(libs.dagger.compiler)
     ksp(libs.dagger.other)
 
+    // ViewModelScope
+    implementation(libs.viewmodelscope)
+
     // Jetpack Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)

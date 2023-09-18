@@ -22,10 +22,10 @@ class HotelFragment : Fragment() {
     private val binding: FragmentHotelBinding
         get() = _binding ?: throw RuntimeException("error")
 
-    val component
+    private val component
             = DaggerHotelComponent.builder().dependencies(HotelDependenciesProvider.dependencies).build()
 
-    val viewModel by lazy {
+    private val viewModel by lazy {
         component.getHotelViewModel()
     }
 

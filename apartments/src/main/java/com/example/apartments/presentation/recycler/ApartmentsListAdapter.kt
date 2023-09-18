@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.example.apartments.databinding.ListItemBinding
-import com.example.apartments.domain.entity.ApartmentEntity
 import com.example.apartments.presentation.model.ApartmentUiModel
 
 class ApartmentsListAdapter: ListAdapter<ApartmentUiModel, ApartmentsHolder>(ApartmentItemDiffCallBack) {
+
+    var onItemClickListener: (() -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ApartmentsHolder {
         val binding = ListItemBinding.inflate(
@@ -37,6 +38,12 @@ class ApartmentsListAdapter: ListAdapter<ApartmentUiModel, ApartmentsHolder>(Apa
         )
         binding.tvApartmentPriceDescription.text = apartmentItem.price.description
 
+        binding.buttonChooseApartment.setOnClickListener {
+            onItemClickListener?.invoke()
+        }
+
     }
+
+
 
 }

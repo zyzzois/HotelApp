@@ -1,6 +1,5 @@
 package com.example.hotel.data.repository
 
-import android.util.Log
 import com.example.hotel.data.mapper.HotelMapper
 import com.example.hotel.data.network.HotelApiService
 import com.example.hotel.domain.entity.HotelInfo
@@ -14,7 +13,6 @@ class HotelRepositoryImpl @Inject constructor(
 
     override suspend fun getHotelInfo(): HotelInfo {
         val requestResult = hotelApiService.getHotelInfo()
-         Log.d("TAG", requestResult.toString())
         return mapper.mapDtoToEntity(requestResult)
     }
 

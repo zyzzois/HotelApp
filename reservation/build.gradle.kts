@@ -53,7 +53,25 @@ dependencies {
     ksp(libs.dagger.compiler)
     ksp(libs.dagger.other)
 
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    // ViewModelScope
+    implementation(libs.viewmodelscope)
+
+    // Slider
+    implementation(libs.slider)
+
     // Jetpack Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    // Tinkoff Decoro
+    implementation(libs.tinkoff.decoro)
+
+    // Lottie
+    implementation(libs.lottie)
 }

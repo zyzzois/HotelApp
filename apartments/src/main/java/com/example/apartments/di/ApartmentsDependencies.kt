@@ -15,3 +15,4 @@ interface ApartmentsDependenciesProvider {
 object ApartmentsDependenciesStore: ApartmentsDependenciesProvider {
     override var dependencies: ApartmentsDependencies by Delegates.notNull()
 }
+

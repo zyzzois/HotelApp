@@ -4,6 +4,7 @@ import android.app.Application
 import com.example.apartments.di.ApartmentsDependenciesStore
 import com.example.hotel.di.HotelDependenciesStore
 import com.example.hotelapp.di.DaggerAppComponent
+import com.example.reservation.di.ReservationDependenciesStore
 
 class App: Application() {
 
@@ -17,6 +18,7 @@ class App: Application() {
         super.onCreate()
         HotelDependenciesStore.dependencies = appComponent
         ApartmentsDependenciesStore.dependencies = appComponent
+        ReservationDependenciesStore.dependencies = appComponent
     }
 
 }
