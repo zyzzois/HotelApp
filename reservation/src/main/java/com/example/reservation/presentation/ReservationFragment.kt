@@ -76,16 +76,14 @@ class ReservationFragment : Fragment() {
             findNavController().popBackStack()
         }
         buttonNavigateToPayment.setOnClickListener {
-            if (viewModel.inputContactsIsValid(editMail.toString(), editNumber.toString())) {
-                val uri = Uri.parse(Routes.PAYMENT_SCREEN)
-                val navOptions = NavOptions.Builder()
-                    .setEnterAnim(com.example.core_ui.R.anim.slide_in_right)
-                    .setExitAnim(com.example.core_ui.R.anim.slide_out_left)
-                    .setPopEnterAnim(com.example.core_ui.R.anim.slide_in_left)
-                    .setPopExitAnim(com.example.core_ui.R.anim.slide_out_right)
-                    .build()
-                findNavController().navigate(uri, navOptions, null)
-            }
+            val uri = Uri.parse(Routes.PAYMENT_SCREEN)
+            val navOptions = NavOptions.Builder()
+                .setEnterAnim(com.example.core_ui.R.anim.slide_in_right)
+                .setExitAnim(com.example.core_ui.R.anim.slide_out_left)
+                .setPopEnterAnim(com.example.core_ui.R.anim.slide_in_left)
+                .setPopExitAnim(com.example.core_ui.R.anim.slide_out_right)
+                .build()
+            findNavController().navigate(uri, navOptions, null)
         }
         buttonAddTourist.setOnClickListener {
             addTouristView()
