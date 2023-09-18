@@ -1,4 +1,42 @@
 <resources>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reservation_title">Бронирование</string>
+    <string name="button_navigate_back_description">button navigate back</string>
+    <string name="city_name">Санкт-Петербург</string>
+    <string name="private_credentials_description">Эти данные никому не передаются. После оплаты мы вышли чек на указанный вами номер и почту</string>
+    <string name="phone_number_hint">Номер телефона</string>
+    <string name="pay">Оплатить %1$d ₽</string>
+    <string name="first_tourist">Первый турист</string>
+    <string name="name_hint">Имя</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="birthday_hint">Дата рождения</string>
+    <string name="citizenship_hint">Гражданство</string>
+    <string name="passport_number_hint">Номер загранпаспорта</string>
+    <string name="validity_period_of_the_passport">Срок действия загранпаспорта</string>
+    <string name="tour_price">Тур</string>
+    <string name="fuel_surcharge">Топливный сбор</string>
+    <string name="service_fee">Сервисный сбор</string>
+    <string name="to_pay">К оплате</string>
+    <string name="price_sample">%1$d ₽</string>
+    <string name="nutrition_sample">Все включено</string>
+    <string name="nutrition_title">Питание</string>
+    <string name="apartment_description_sample">Стандартный с видом на бассейн или сад</string>
+    <string name="apartment_title">Номер</string>
+    <string name="hotel_name_sample">Steigenberger Makadi</string>
+    <string name="hotel_name_title">Отель</string>
+    <string name="nights_number_sample">%1$d ночей</string>
+    <string name="nights_number_title">Кол-во ночей</string>
+    <string name="trip_date_sample">%1$s – %2$s</string>
+    <string name="trip_date_title">Даты</string>
+    <string name="arrival_sample">Египет, Хургада</string>
+    <string name="arrival_title">Страна, город</string>
+    <string name="departure_sample">Санкт-Петербург</string>
+    <string name="departure_title">Вылет из</string>
+    <string name="mail_hint">Почта</string>
+    <string name="trip_price_sample">%1$d ₽</string>
+    <string name="сustomer_info_title">Информация о покупателе</string>
+    <string name="add_new_tourist_content_description">button add new tourist</string>
+    <string name="add_tourist">Добавить туриста</string>
+    <string name="error_number">Некорректный номер!</string>
+    <string name="error_mail">Некорректная почта!</string>
+    <string name="error_not_all_data">Необходимо ввести все данные!</string>
 </resources>

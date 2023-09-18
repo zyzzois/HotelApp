@@ -19,6 +19,7 @@
             android:layout_height="257dp"
             app:iss_auto_cycle="false"
             app:iss_delay="1000"
+            app:iss_corner_radius="15"
             app:iss_period="1000"
             app:iss_title_background="@drawable/default_gradient" />
 

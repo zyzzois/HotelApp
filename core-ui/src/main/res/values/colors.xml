@@ -6,5 +6,7 @@
     <color name="gray">#828796</color>
     <color name="gold_background">#26FFC700</color>
     <color name="blue">#0D72FF</color>
+    <color name="blue_background">#1A0D72FF</color>
     <color name="light_gray_background">#FBFBFC</color>
+    <color name="light_gray_hint">#A9ABB7</color>
 </resources>

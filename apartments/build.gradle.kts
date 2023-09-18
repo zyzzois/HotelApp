@@ -68,4 +68,7 @@ dependencies {
     // Jetpack Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    // Lottie
+    implementation(libs.lottie)
 }

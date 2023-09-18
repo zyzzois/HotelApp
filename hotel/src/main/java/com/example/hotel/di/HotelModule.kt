@@ -3,6 +3,7 @@ package com.example.hotel.di
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModel
+import com.example.code_data.di.ViewModelKey
 import com.example.hotel.data.network.HotelApiService
 import com.example.hotel.data.repository.HotelRepositoryImpl
 import com.example.hotel.domain.repository.HotelRepository
@@ -31,7 +32,7 @@ interface HotelModule {
         }
 
         @Provides
-        fun provideApiService(retrofit: Retrofit): HotelApiService {
+        fun provideHotelApiService(retrofit: Retrofit): HotelApiService {
             return retrofit.create(HotelApiService::class.java)
         }
 

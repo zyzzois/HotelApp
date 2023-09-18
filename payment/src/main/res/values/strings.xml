@@ -22,4 +22,9 @@
     <string name="facilities_detail_icon_content_description">facilities detail icon</string>
     <string name="icon_not_included_content_description">icon not included</string>
     <string name="icon_included_content_description">icon included</string>
+    <string name="order_has_been_paid">Заказ оплачен</string>
+    <string name="reservation_description">Подтверждение заказа №104893 может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+    <string name="reservation_result">Ваш заказ принят в работу</string>
+    <string name="success_icon_conten_description">success icon</string>
+    <string name="button_back_content_description">navigate back button</string>
 </resources>

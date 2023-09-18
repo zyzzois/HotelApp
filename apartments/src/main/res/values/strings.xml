@@ -4,4 +4,6 @@
     <string name="conditioner">Кондиционер</string>
     <string name="apartment_detail_info">Подробнее о номере</string>
     <string name="choose_apartment">Выбрать номер</string>
+    <string name="back_button_content_description">button back clicked</string>
+    <string name="hotel_name_description">Steigenberger Makadi</string>
 </resources>
